@@ -1,38 +1,128 @@
-html, body {
-    margin: 0;
-}
 body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
 }
 
-.wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
+a {
+    text-decoration: none;
 }
-.main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
+
+header {
+    background: rgb(204,9,144);
+    background: linear-gradient(90deg, rgba(204,9,144,0.7875525210084033) 0%, rgba(221,0,90,0.8575805322128851) 35%, rgba(255,0,112,0.7651435574229692) 100%);   
+    padding: 10px;
 }
-.menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
+
+.btn-abrir {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
 }
-.header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+
+nav {
+    height: 100%;
+    width: 0px;
+    background-color: #FF69B4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: width 0.3s;
 }
-.content {
+
+nav a {
+    color:white;
+    font-size: 25px;
+    display:block;
+    font-weight: bolder;
+    padding: 12px 10px 12px 32px;
+}
+
+nav a:hover {
+    color: #FF69B4;
     background-color: white;
-    min-height: 300px;
-    padding: 20px;
+    border-radius: 5px;
 }
-.footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+
+main {
+    padding: 10px;
+    transition: margin-left 0.5s;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.fechar {
+    background-color:  #FF1493;
+    border-radius: 5px;
+}
+
+img {
+    position: absolute;
+    height: auto;
+    right: 20px;
+    width: 250px;
+}
+.cred {
+    color: red;
+    font-weight: bolder;
+}
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 155px;
+    padding-top: 0px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 0px;
+    border-top: 1px solid #555;
+    height: 20px;
 }
