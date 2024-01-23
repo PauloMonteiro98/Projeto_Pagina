@@ -3,6 +3,10 @@ body {
     margin: 0px;
     height: 100vh;
     width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
 }
 
 a {
@@ -47,12 +51,16 @@ nav a:hover {
     border-radius: 5px;
 }
 
+
 main {
     padding: 10px;
     transition: margin-left 0.5s;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .fechar {
@@ -71,16 +79,64 @@ img {
     font-weight: bolder;
 }
 
+strong {
+    font-weight: bolder;
+}
 
+.calcinha {
+    display: flex;
+    justify-content: center;
+}
 
+input {
+    border-radius: 15px;
+    font-size: 18px;
+}
+.conteudo-centro {
+    display: flex;
+    flex-direction:column;
+    background-color: #e70fa610;
+    border-radius: 15px;
+    height: 550px;
+    width: 50%;
+    font-size: 19px;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-atendimento {
+    display: flex;
+    flex-direction:column;
+    background-color: #e70fa610;
+    border-radius: 15px;
+    height: 550px;
+    width: 50%;
+    font-size: 19px;
+}
+
+th {
+    background-color: black;
+    color: #fff;
+}
+
+.formulario{
+    background-color: #FF69B4;
+    height: 400px;
+    width: 70%;
+    border-radius: 20px;
+}
+
+form {
+    padding: 20px;
+    margin: 15px;
+}
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 .container {
@@ -91,7 +147,7 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    height: 155px;
+    height: 140px;
     padding-top: 0px;
 }
 
@@ -117,12 +173,4 @@ footer {
 .footer-section a {
     color: #fff;
     text-decoration: none;
-}
-
-.footer-bottom {
-    margin-top: 0px;
-    text-align: center;
-    padding-top: 0px;
-    border-top: 1px solid #555;
-    height: 20px;
 }
